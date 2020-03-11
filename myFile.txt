@@ -1,0 +1,6 @@
+red красный
+green зеленый
+blue синий
+yellow желтый
+black черный
+white белый
