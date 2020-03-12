@@ -43,22 +43,20 @@ static Scanner in = new Scanner(System.in);
         return in.next();
     }
 
-    private static String isKeyExists(String key, HashMap<String, String> map) {
+    private static void isKeyExists(String key, HashMap<String, String> map) {
         if (map.containsKey(key)) {
             System.out.println("Такая карточка уже есть. Введи другую:");
             key = getStringCard(in);
             isKeyExists(key, map);
         }
-        return key;
     }
 
-    private static String isValueExists(String val, HashMap<String, String> map) {
+    private static void isValueExists(String val, HashMap<String, String> map) {
         if (map.containsValue(val)) {
             System.out.println("Такое определение уже есть. Давай другое:");
             val = getStringCard(in);
             isValueExists(val, map);
         }
-        return val;
     }
 
     private static void showCards(HashMap<String, String> mapCards) {
